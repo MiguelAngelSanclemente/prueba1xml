@@ -1,0 +1,180 @@
+Os seguintes documentos non son válidos porque conteñen un ou dous erros (os erros
+non están na DTD interna). Corrixe os erros e comproba que xa son documentos válidos.
+
+<!--  -->
+
+<!--En los ejercios corregidos esta etiquetado lo que le faltaba al dtd que no estaba corregido  -->
+
+
+
+Exercicio 1
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<persona dni="03141592E" />
+
+<!-- corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona [
+<!ELEMENT persona EMPTY>
+<!ATTLIST persona nombre CDATA #IMPLIED>
+]>
+<persona nombre="Juan" />        <!-- en el dtd no pone que tengas 
+                                    que meter un atributu dni solo nombre  -->
+
+
+
+Exercicio 2
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicula [
+<!ELEMENT pelicula EMPTY>
+<!ATTLIST pelicula titulo CDATA #IMPLIED>
+]>
+<pelicula titulo="La diligencia" genero="oeste" />
+
+
+<!-- corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicula [
+<!ELEMENT pelicula EMPTY>
+<!ATTLIST pelicula titulo CDATA #IMPLIED>
+]>
+<pelicula titulo="La diligencia" />  <!-- en el en dtd no hat un cdata de genero solo de titulo  -->
+
+
+
+Exercicio 3
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+
+<cuadros>
+    <cuadro titulo="Adán y Eva" autor="Alberto Durero" />
+    <cuadro autor="Lucas Cranach, el viejo" titulo="Adán y Eva" />
+</cuadros>
+
+
+<!-- corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+<cuadro titulo="AdanEvaDurero" autor="Alberto Durero" />    <!-- los id no pueden tener espacios dentro, pero los cdata si pueden -->
+<cuadro titulo="AdanEvaCranach" autor="Lucas Cranach, el viejo" />
+</cuadros>
+
+
+
+Exercicio 4
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaCompra [
+<!ELEMENT listaCompra (item*)>
+<!ELEMENT item EMPTY>
+<!ATTLIST item nombre CDATA #REQUIRED>
+<!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+<listaCompra>
+    <leche cantidad="12 litros"></leche>
+    <pan cantidad="3 barras de cuarto" />
+</listaCompra>
+
+
+<!-- corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaCompra [
+<!ELEMENT listaCompra (item*)>
+<!ELEMENT item EMPTY>
+<!ATTLIST item nombre CDATA #REQUIRED>
+<!ATTLIST item cantidad CDATA #REQUIRED>
+]>
+<listaCompra>
+<item nombre="leche" cantidad="12 litros" />   <!-- le falta la etiqueta  item, no tiene el cdata de nombre y cantidad que son obligatorios  -->
+<item nombre="pan" cantidad="3 barras de cuarto" />
+</listaCompra>
+
+
+
+
+
+Exercicio 5
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol (jugador*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+]>
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="1"/>
+    <jugador nombre="Edison Arantes do Nascimento, Pelé" codigo="2" />
+    <jugador nombre="Diego Armando Maradona" codigo="3" />
+    <jugador nombre="Johan Cruyff" codigo="4" />
+</futbol>
+
+
+<!-- corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol (jugador*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+]>
+<futbol>
+<jugador nombre="Alfredo_Di_Stefano" codigo="1"/> <!-- NMTOKENS no permite espacios entre palabras -->
+<jugador nombre="Edison_Arantes_do_Nascimento_Pele" codigo="2" />
+<jugador nombre="Diego_Armando_Maradona" codigo="3" />
+<jugador nombre="Johan_Cruyff" codigo="4" />
+</futbol>
+
+
+
+Exercicio 6
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol ((jugador|equipo)*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre CDATA #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+<futbol>
+    <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+    <jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+    <jugador nombre="Diego Armando Maradona" codigo="dam" />
+    <jugador nombre="Johan Cruyff" codigo="jc" />
+    <equipo nombre="Società Sportiva Calcio Napoli" jugadores="Maradona" />
+    <equipo nombre="Futbol Club Barcelona" jugadores="Cruyff, Maradona" />
+</futbol>
+
+<!-- corregido -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE futbol [
+<!ELEMENT futbol ((jugador|equipo)*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre CDATA #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+<futbol>
+<jugador nombre="AlfredoDiStefano" codigo="ads"/>
+<jugador nombre="EdisonArantesDoNascimento" codigo="ean" />
+<jugador nombre="DiegoArmandoMaradona" codigo="dam" />
+<jugador nombre="JohanCruyff" codigo="jc" />
+<equipo nombre="Società Sportiva Calcio Napoli" jugadores="Miguel" />
+<equipo nombre="Futbol Club Barcelona" jugadores="Miguel Jn" />
+</futbol>

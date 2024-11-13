@@ -1,0 +1,70 @@
+
+<!DOCTYPE albaran [
+<!ELEMENT albaran (numero, data, cliente, artigos)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+
+<!ELEMENT cliente (nome, poboacion)>
+
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT poboacion (#PCDATA)>
+
+<!ELEMENT artigos (compra+)>
+
+<!ELEMENT compra (artigo,cantidade)>
+<!ELEMENT artigo (descricion,botella?,prezo)>
+<!ELEMENT descricion (#PCDATA)>
+<!ELEMENT botella EMPTY>
+<!ELEMENT prezo (#PCDATA)>
+
+<!ELEMENT cantidade (#PCDATA)>
+
+
+<!ATTLIST cliente id ID #REQUIRED>
+<!ATTLIST artigo codigo ID #REQUIRED>
+]>
+
+
+
+
+
+<albaran>
+    <numero>8</numero>
+    <data>2011-10-03</data>
+    <cliente id="C1">
+        <nome>Pere Garcia</nome>
+        <poboacion>Figueres</poboacion>
+    </cliente>
+   
+    <artigos>
+
+        <compra>
+            <artigo codigo="a9">
+                <descricion>Vi Valdepeñas gran reserva. Viña Albali 75cl</descricion>
+                <botella/>
+                <prezo>4.98</prezo>
+            </artigo>
+            <cantidade>3</cantidade>
+        </compra>
+
+        <compra>
+            <artigo codigo="v12">
+                <descricion>Vi negre Rioja reserva. Marques de Riscal 75 cl</descricion>
+                <botella/>
+                <prezo>12.85</prezo>
+            </artigo>
+            <cantidade>1</cantidade>
+        </compra>
+
+        <compra>
+            <artigo codigo="m58">
+                <descricion>Vi Ribera de Duero criança. Valpicia 75 cl</descricion>
+                <botella/>
+                <prezo>5,49</prezo>
+            </artigo>
+            <cantidade>1</cantidade>
+        </compra>
+
+   
+    </artigos>
+</albaran>

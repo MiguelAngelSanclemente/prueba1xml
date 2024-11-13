@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE alumnado [
+<!ELEMENT matricula (ciclo, alumnos)>
+<!ELEMENT ciclo (#PCDATA)>
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nome, ano, modulos)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT modulos (modulo+)>
+<!ELEMENT modulo (#PCDATA)>
+
+]>
+
+
+
+
+<matricula>
+    <ciclo>Desenvolvemento de aplicacións multiplataforma</ciclo>
+    <alumnos>
+        <alumno>
+            <nome>Tom Berenger</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>LMSXI</modulo>
+                <modulo>FOL</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>Glenn Close</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>Sistemas informáticos</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>Jeff Goldblum</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>Programación</modulo>
+                <modulo>Bases de datos</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>William Hurt</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>LMSXI</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>Kevin KLine</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>LMSXI</modulo>
+                <modulo>Programación</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>Mary Kae Place</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>LMSXI</modulo>
+                <modulo>Sistemas Informáticos</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>Meg Tilly</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>Programación</modulo>
+            </modulos>
+        </alumno>
+        <alumno>
+            <nome>JoBeth Willians</nome>
+            <ano>2023</ano>
+            <modulos>
+                <modulo>LMSXI</modulo>
+                <modulo>Programación</modulo>
+                <modulo>Sistemas Informáticos</modulo>
+            </modulos>
+        </alumno>
+    </alumnos>
+</matricula>
+
+
+
+
+<!--Vamos a modificar la definicion para:
+
+-Identificador de la receta - obligatario
+-Duracion de la receta - opcional
+-favorita (si o no, por defecto no)
+-Catidad del ingrediente - obligatorio
+-Tipo de ingrediente (lacteo,legumbre,verdura...)- obligatorio
+-Ingredientes vegano o no
+-Una vez definidos crear una receta de ejemplo
+
+-->
+
+<!--   -->
+
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta+)>                <!-- una o mas de una receta  -->
+<!ELEMENT receta (nombre, duracion?, favorita?, ingredientes)><!-- tendra un nombre, cero o una ocurrencia de duracion y favorita, tendra un ingrediente  -->
+<!ELEMENT nombre (#PCDATA)>                 <!-- dentro de receta  -->
+<!ELEMENT duracion (#PCDATA)>               <!-- dentro de receta  -->
+<!ELEMENT favorita (si-no)>                 <!-- dentro de receta  -->
+<!ELEMENT si-no (#PCDATA)>                  <!-- dentro de receta  -->
+<!ELEMENT ingredientes (ingrediente+)>      <!-- dentro de receta  -->
+<!ELEMENT ingrediente (cantidad, tipo, vegano?)><!-- tiene una cantidad un tipo y podra tener o cero o una ocurrencua de vegano-->
+<!ELEMENT cantidad (#PCDATA)>               <!-- dentro de ingrediente   -->
+<!ELEMENT tipo (#PCDATA)>                   <!-- dentro de ingrediente   -->
+<!ELEMENT vegano (#PCDATA)>                 <!-- dentro de ingrediente   -->
+]>
+
+<!--Ejemplo de receta-->
+
+<recetas>
+  <receta>
+   <nombre>Tarta de la abuela</nombre> <!-- nombre  -->
+    <duracion>1 hora y 15 minutos</duracion> <!-- duracion -->
+    <favorita>no</favorita>  <!-- favorita  -->
+    <ingredientes>  <!-- ingredientes  -->
+      <ingrediente>  <!--   ingrediente-->
+        <cantidad>200 g</cantidad> <!-- cantidad  -->
+        <tipo>harina</tipo> <!-- vegano  -->
+        <vegano>no</vegano>
+      </ingrediente>
+      <ingrediente>
+        <cantidad>100 g</cantidad>
+        <tipo>chocolate</tipo>
+        <vegano>no</vegano>
+      </ingrediente>
+      <ingrediente>
+        <cantidad>50 g</cantidad>
+        <tipo>mantequilla</tipo>
+        <vegano>no</vegano>
+      </ingrediente>
+      <ingrediente>
+        <cantidad>100 g</cantidad>
+        <tipo>azúcar</tipo>
+        <vegano>no</vegano>
+      </ingrediente>
+      <ingrediente>
+        <cantidad>2</cantidad>
+        <tipo>huevos</tipo>
+        <vegano>no</vegano>
+      </ingrediente>
+    </ingredientes>
+  </receta>
+</recetas>

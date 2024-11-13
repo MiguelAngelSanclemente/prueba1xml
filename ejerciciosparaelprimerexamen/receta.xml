@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta+)>
+<!ELEMENT receta (nombre,ingredientes)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ingrediente (ingrediente)>
+<!ELEMENT ingredientes (#PCDATA)>
+
+]>
+
+<!--Vamos a modificar la definicion para:
+
+-Identificador de la receta - obligatario
+-Duracion de la receta - opcional
+-favorita (si o no, por defecto no)
+-Catidad del ingrediente - obligatorio
+-Tipo de ingrediente (lacteo,legumbre,verdura...)- obligatorio
+-Ingredientes vegano o no
+-Una vez definidos crear una receta de ejemplo
+
+
+-->
+
+<!--  -->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta+)>                        <!-- una o mas recetas -->
+<!ELEMENT receta (nombre,ingredientes,duracion?)>   <!-- un nombre, un ingrediente y puede ser o cero o mas de una duracion -->
+<!ATTLIST receta id ID #REQUIRED>                   <!-- identificador de receta obligatoria  -->
+<!ATTLIST receta favorita (si|no) "no">             <!-- atributo si o no -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente+)>              <!-- puede tener uno o mas de un igrediente -->
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED>     <!-- id de cantidad en ingrediente que es obligatorio -->
+<!ATTLIST ingrediente tipo (lacteo|legumbre|verdura|carne|pescado|otro) #REQUIRED><!-- atributi tipo obligatorio  -->
+<!ATTLIST ingrediente vegano (si|no) #REQUIRED>     <!-- atributo vegano de ingrediente obligatorio -->
+<!ELEMENT duracion (#PCDATA)>
+]>
+
+<recetas>
+  <receta id="1" favorita="si">
+    <nombre>Tortilla de Patatas</nombre>
+    <ingredientes>
+      <ingrediente cantidad="500g" tipo="verdura" vegano="si">Patatas</ingrediente>
+      <ingrediente cantidad="200g" tipo="lacteo" vegano="no">Huevos</ingrediente>
+      <ingrediente cantidad="50g" tipo="verdura" vegano="si">Cebolla</ingrediente>
+      <ingrediente cantidad="100ml" tipo="lacteo" vegano="no">Aceite de oliva</ingrediente>
+      <ingrediente cantidad="1 pizca" tipo="otro" vegano="si">Sal</ingrediente>
+    </ingredientes>
+    <duracion>30 minutos</duracion>
+  </receta>
+</recetas>
