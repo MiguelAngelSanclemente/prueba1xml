@@ -1,0 +1,49 @@
+
+/* Aplicar a todo el documento */
+documento {
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+/* Estilo del encabezado */
+encabezado {
+    color: white;
+    display: block;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del título */
+titulo {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo de las descripciones */
+descripcion {
+    display: block;
+    margin-top: 10px;
+}
+
+descripcion linea1 {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+descripcion linea2 {
+    display: block;
+    font-style: italic;
+    color: #555;
+}

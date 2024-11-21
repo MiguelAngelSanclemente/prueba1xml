@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="ejemplo2.css"?>
+<documento>
+    <encabezado>Hola buen día mi gente</encabezado>
+    <titulo>Pedro González</titulo>
+    <descripcion>
+        <linea1>Hago cosas</linea1>
+        <linea2>Sí, en efecto hago cosas</linea2>
+    </descripcion>
+</documento>

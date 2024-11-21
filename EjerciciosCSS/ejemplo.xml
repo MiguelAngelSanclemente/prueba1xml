@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="deejemplo.css" type="text/css"?>
+    <raiz>
+        <persona>
+
+            <nombre>  FLoymejor </nombre>
+            <trabajo> chambeador  </trabajo>
+            <moodd> caliente</moodd>
+
+        </persona>
+
+
+    </raiz>
