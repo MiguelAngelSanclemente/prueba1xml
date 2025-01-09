@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="ejercico 1.css"?>
+<alumnos>
+  <centro>CPR Daniel Castelao</centro>
+  <modulo>Linguaxes de marcas e sistemas de xestión de información</modulo>
+  <profesor>
+       <nome>Profesor:Cedric Bixler-Zavala</nome>     
+  </profesor>
+  <alumnos>
+     <alumno>
+         <nomes>Omar Rodríguez López</nomes>
+         <temas>
+             <tema num="1">UF1:Si</tema>
+             <tema num="2">UF2:Si</tema>
+             <tema num="3">UF3:Si</tema>
+             <tema num="4">UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+         <nomes>Keely Davis</nomes>
+         <temas>
+             <tema num="1">UF1:Si</tema>
+             <tema num="2">UF2:Si</tema>
+             <tema num="3">UF3:Si</tema>
+             <tema num="4">UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+         <nomes>Paul Hinojos González</nomes>
+         <temas>
+             <tema num="1">UF1:Si</tema>
+             <tema num="2">UF2:Non</tema>
+             <tema num="3">UF3:Si</tema>
+             <tema num="4">UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+         <nomes>Tony Hajjar </nomes>
+         <temas>
+             <tema num="1">UF1:Non</tema>
+             <tema num="2">UF2:Si</tema>
+             <tema num="3">UF3:Si</tema>
+             <tema num="4">UF4:Si</tema>
+         </temas>
+     </alumno>
+     <alumno>
+         <nomes>Jim Ward</nomes>
+         <temas>
+             <tema num="1">UF1:Si</tema>
+             <tema num="2">UF2:Si</tema>
+             <tema num="3">UF3:Si</tema>
+             <tema num="4">UF4:Si</tema>
+         </temas>
+     </alumno>     
+     <alumno>
+         <nomes>Jarret Wrenn</nomes>
+         <temas>
+             <tema num="1">UF1:Non</tema>
+             <tema num="2">UF2:Non</tema>
+             <tema num="3">UF3:Non</tema>
+             <tema num="4">UF4:Si</tema>
+         </temas>
+     </alumno>
+  </alumnos>
+</alumnos>

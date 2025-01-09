@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<equipos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="lol.xsd">
+
+    <equipo nome="T1" ano_fundacion="2003" rexion="LCK">
+
+
+        <xogador nacionalidade="Coreana">
+            <nome>Lee Sang-hyeok</nome>
+            <idade>27</idade>
+            <alcume>Faker</alcume>
+            <rol>Mid</rol>
+            <campion_main>LeBlanc</campion_main>
+        </xogador>
+        <xogador nacionalidade="Coreana">
+            <nome>Choi Woo-je</nome>
+            <idade>23</idade>
+            <alcume>Zeus</alcume>
+            <rol>Top</rol>
+            <campion_main>Jax</campion_main>
+        </xogador>
+        <xogador nacionalidade="Coreana">
+            <nome>Moon Hyeon-joon</nome>
+            <idade>21</idade>
+            <alcume>Oner</alcume>
+            <rol>Jungla</rol>
+            <campion_main>Lee Sin</campion_main>
+        </xogador>
+        <xogador nacionalidade="Coreana">
+            <nome>Lee Min-hyung</nome>
+            <idade>22</idade>
+            <alcume>Gumayusi</alcume>
+            <rol>ADC</rol>
+            <campion_main>Aphelios</campion_main>
+        </xogador>
+        <xogador nacionalidade="Coreana">
+            <nome>Ryu Min-seok</nome>
+            <idade>20</idade>
+            <alcume>Keria</alcume>
+            <rol>Support</rol>
+            <campion_main>Thresh</campion_main>
+        </xogador>
+        <adestrador nacionalidade="Coreana">
+            <nome>Bae Sung-woong</nome>
+            <alcume>Bengi</alcume>
+        </adestrador>
+        <historial_vitorias>
+            <torneo>
+                <nome>World Championship</nome>
+                <ano>2015</ano>
+                <premio>1000000</premio>
+            </torneo>
+            <torneo>
+                <nome>World Championship</nome>
+                <ano>2016</ano>
+                <premio>2000000</premio>
+            </torneo>
+        </historial_vitorias>
+    </equipo>
+
+    <equipo nome="JD Gaming" ano_fundacion="2017" rexion="LPL">
+        <xogador nacionalidade="China">
+            <nome>Zeng Qi</nome>
+            <idade>23</idade>
+            <alcume>Yagao</alcume>
+            <rol>Mid</rol>
+            <campion_main>Ahri</campion_main>
+        </xogador>
+        <xogador nacionalidade="Coreana">
+            <nome>Seo Jin-hyeok</nome>
+            <idade>24</idade>
+            <alcume>Kanavi</alcume>
+            <rol>Jungla</rol>
+            <campion_main>Viego</campion_main>
+        </xogador>
+        <xogador nacionalidade="China">
+            <nome>Bai Jia-Hao</nome>
+            <idade>22</idade>
+            <alcume>369</alcume>
+            <rol>Top</rol>
+            <campion_main>Renekton</campion_main>
+        </xogador>
+        <xogador nacionalidade="China">
+            <nome>Wang Ze-shi</nome>
+            <idade>22</idade>
+            <alcume>Hope</alcume>
+            <rol>ADC</rol>
+            <campion_main>Zeri</campion_main>
+        </xogador>
+        <xogador nacionalidade="China">
+            <nome>Luo Shi-yuan</nome>
+            <idade>20</idade>
+            <alcume>Missing</alcume>
+            <rol>Support</rol>
+            <campion_main>Yuumi</campion_main>
+        </xogador>
+        <adestrador nacionalidade="China">
+            <nome>Yoon Dong-hoon</nome>
+            <alcume>Homme</alcume>
+        </adestrador>
+        <historial_vitorias>
+            <torneo>
+                <nome>MSI</nome>
+                <ano>2023</ano>
+                <premio>750000</premio>
+            </torneo>
+        </historial_vitorias>
+    </equipo>
+</equipos>

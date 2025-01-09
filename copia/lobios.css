@@ -1,0 +1,48 @@
+tempo{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 1000px;
+    padding-bottom: 100px;
+    border-style: solid;
+    display: flex;
+
+
+}
+comarca{
+    visibility: hidden;
+}
+
+
+nome{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    width: 220px;
+
+}
+data{
+    color: red;
+    width: 220px;
+    margin-left: 20px;
+    font-size: 40px;
+}
+maxima{
+    color: white;
+}
+minima{
+    color: white;
+}
+vento{
+    color: white;
+}
+prevision{
+flex-direction: column;
+float: right;
+width: 100px;
+height: 100px;
+color:black;
+align-content: center;
+background-image: url('neve.png');
+}

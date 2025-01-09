@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejercicio 3.css" type="text/css"?>
+<centro>
+    <pagina_web>www.danielcastelao.org</pagina_web>
+    <cursos>
+        <curso>
+            <nome>Administracion de Sistemas Informaticos en rede </nome>
+            <tipo>Superior</tipo>
+            <data>2023</data>
+        </curso>
+        <curso>
+            <nome>Desenrolo de Aplicaciones Multiplataforma</nome>
+            <tipo>Superior</tipo>
+            <data>2023</data>
+        </curso>
+        <curso>
+            <nome>Desenrolo de Aplicacions Web</nome>
+            <tipo>Superior</tipo>
+            <data>2023</data>
+        </curso>
+        <curso>
+            <nome>Sistemas Microinformaticos e Redes</nome>
+            <tipo>Medio</tipo>
+            <data>2023</data>
+        </curso>
+    </cursos>
+</centro>

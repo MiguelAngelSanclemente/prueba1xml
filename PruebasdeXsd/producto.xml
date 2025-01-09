@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="producto.xsd">
+
+
+   <producto fragil="true">
+        <nombre>Manzanas</nombre>
+        <tipo>Alimento</tipo>
+        <precio>150</precio>
+        <stock>50</stock>
+    </producto>
+    <producto fragil="false">
+        <nombre>Naranjas</nombre>
+        <tipo>Alimento</tipo>
+        <precio>200</precio>
+        <stock>30</stock>
+    </producto>
+    <producto fragil="true">
+        <nombre>Vasos</nombre>
+        <tipo>Hogar</tipo>
+        <precio>500</precio>
+        <stock>20</stock>
+    </producto>
+</productos>
