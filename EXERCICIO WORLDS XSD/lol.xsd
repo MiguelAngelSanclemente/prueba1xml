@@ -8,6 +8,9 @@
         <xs:element name="equipo" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+
+
+
               <!-- Lista de xogadores -->
               <xs:element name="xogador" maxOccurs="unbounded">
                 <xs:complexType>
@@ -22,6 +25,11 @@
                 </xs:complexType>
               </xs:element>
 
+
+
+
+
+
               <!-- Adestrador opcional -->
               <xs:element name="adestrador" minOccurs="0">
                 <xs:complexType>
@@ -32,6 +40,10 @@
                   <xs:attribute name="nacionalidade" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
+
+
+
+
 
               <!-- Historial de vitorias -->
               <xs:element name="historial_vitorias" minOccurs="0">
@@ -51,6 +63,11 @@
               </xs:element>
             </xs:sequence>
 
+
+
+
+
+
             <!-- Atributos do equipo -->
             <xs:attribute name="nome" type="xs:string" use="required"/>
             <xs:attribute name="ano_fundacion" type="xs:gYear" use="required"/>
@@ -60,6 +77,11 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+
+
+
+
+
 
   <!-- Tipos personalizados -->
   <xs:simpleType name="rolType">
@@ -71,6 +93,10 @@
       <xs:enumeration value="Support"/>
     </xs:restriction>
   </xs:simpleType>
+
+
+
+
 
   <xs:simpleType name="rexionType">
     <xs:restriction base="xs:string">
