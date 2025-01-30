@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Rexistro</title>
+</head>
+<body>
+    <h2>Formulario de rexistro</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="apelidos">Apelidos:</label>
+        <input type="text" id="apelidos" name="apelidos"><br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="binario" name="sexo" value="binario">
+        <label for="binario">Binario</label>
+        <input type="radio" id="non-binario" name="sexo" value="non-binario">
+        <label for="non-binario">Non binario</label><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <label for="poboacion">Poboación:</label>
+        <select id="poboacion" name="poboacion">
+            <option value="Vigo">Vigo</option>
+            <option value="A Coruña">A Coruña</option>
+            <option value="Lugo">Lugo</option>
+            <option value="Ourense">Ourense</option>
+            <option value="Cangas">Cangas</option>
+        </select><br><br>
+
+        <label for="descripcion">Descrición:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="novidades" name="novidades" checked>
+        <label for="novidades">Desexo recibir información sobre as novidades e ofertas</label><br><br>
+
+        <input type="checkbox" id="acepto" name="acepto">
+        <label for="acepto">Declaro ter lido e aceptar as condicións xerais do programa e a normativa sobre protección de datos</label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

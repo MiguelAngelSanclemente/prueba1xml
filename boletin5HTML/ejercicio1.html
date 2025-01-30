@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="gl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
+    <title>Formulario</title>
 </head>
 <body>
-    <h1>Este es un título de ejemplo</h1>
-    <p>Este es un párrafo con información del ejercicio 1.</p>
+    <p><strong>1. Creo o HTML seguinte:</strong></p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="contrasinal">Contrasinal:</label>
+        <input type="password" id="contrasinal" name="contrasinal"><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="10" cols="35"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
 </body>
 </html>
