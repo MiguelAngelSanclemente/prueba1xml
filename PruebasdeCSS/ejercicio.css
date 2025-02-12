@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.post {
+    width: 400px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; 
+    border-radius: 0;
+}
+
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.post-header img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.post-header div {
+    font-weight: bold;
+}
+
+.post-header i {
+    font-size: 18px;  
+    cursor: pointer;
+    color: #333;
+    margin-left: auto; 
+}
+
+.post-header span {
+    display: block;
+    font-size: 12px;
+    color: gray;
+}
+
+.post-img {
+    width: 100%;
+    height: 400px;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.post-icons div {
+    display: flex;
+    gap: 15px; 
+}
+
+.post-icons i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.post-icons i:hover {
+    color: #ff3040; /* Para que me des like al ejercicio */
+}
+
+
+.post-icons img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.post-likes {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.post-content {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.post-content b {
+    font-weight: bold;
+}
