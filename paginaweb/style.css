@@ -1,89 +1,89 @@
-/* Reset basic styles */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #111;
-    color: #eaeaea;
-    line-height: 1.6;
+    background-color: black;
+    color: white;
 }
 
 header {
-    background: #222;
-    color: #f44336;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #f44336;
     text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.2rem;
+    color: white;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: red;
 }
 
 .hero {
-    background: url('doom-eternal-hero.jpg') no-repeat center center/cover;
-    padding: 4rem 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('doom-background.jpg') no-repeat center center/cover;
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 4rem;
-    color: #f44336;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+.hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 8px black;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    color: #fff;
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border: 2px solid red;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: red;
 }
 
 section {
-    padding: 3rem 1rem;
+    padding: 100px 20px;
     text-align: center;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    color: #f44336;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
 }
 
 footer {
-    background: #222;
     text-align: center;
-    padding: 1rem;
-    color: #bbb;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
 }

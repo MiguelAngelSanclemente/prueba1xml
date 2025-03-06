@@ -3,98 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOOM ETERNAL - Fan Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute("href")).scrollIntoView({
-                        behavior: "smooth"
-                    });
-                });
-            });
-        });
-    </script>
-    <style>
-        body {
-            font-family: 'Anton', sans-serif;
-            background-color: #0b0b0b;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: #1a1a1a;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 28px;
-            color: #f44336;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #f44336;
-            text-decoration: none;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-        .section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 50px;
-        }
-        .hero {
-            background: url('1126863.jpg') no-repeat center center/cover;
-        }
-        .hero h1 {
-            font-size: 60px;
-            color: #f44336;
-            text-shadow: 3px 3px 10px black;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background: #f44336;
-            padding: 15px 25px;
-            color: white;
-            text-decoration: none;
-            font-size: 22px;
-            border-radius: 5px;
-            margin: 10px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #ff5733;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1a1a1a;
-        }
-    </style>
+    <title>DOOM ETERNAL</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -110,32 +20,33 @@
         </nav>
     </header>
 
-    <section id="home" class="section hero">
-        
+    <section id="home" class="hero">
+        <h1>ARRASA EL INFIERNO</h1>
+        <p>Los ejércitos del infierno han invadido la Tierra...</p>
+        <div class="buttons">
+            <a href="#trailer" class="btn">Tráiler</a>
+            <a href="#buy" class="btn">Comprar Ya</a>
+        </div>
     </section>
-    <section id="about" class="section">
+
+    <section id="about">
         <h2>Historia</h2>
-        <p>Explora el trasfondo de DOOM Eternal...</p>
+        <p>Ponte en la piel del Slayer en una épica campaña...</p>
     </section>
-    <section id="gameplay" class="section">
+    
+    <section id="gameplay">
         <h2>Jugabilidad</h2>
-        <p>Descubre las mecánicas de juego...</p>
+        <p>Disfruta de la mejor combinación de velocidad y potencia...</p>
     </section>
-    <section id="news" class="section">
+    
+    <section id="news">
         <h2>Noticias</h2>
         <p>Últimas novedades sobre el juego...</p>
     </section>
-    <section id="contact" class="section">
+    
+    <section id="contact">
         <h2>Contacto</h2>
         <p>Conéctate con la comunidad...</p>
-    </section>
-    <section id="hell" class="section">
-        <h2>Arrasa el infierno</h2>
-        <p>Los ejércitos del infierno han invadido la Tierra. Ponte en la piel del Slayer en una épica campaña para un jugador y cruza dimensiones para detener la destrucción definitiva de la humanidad.</p>
-        <p>No le tienen miedo a nada... salvo a ti.</p>
-        <p>Disfruta de la mejor combinación de velocidad y potencia en DOOM Eternal, que trae un salto cualitativo del combate en primera persona.</p>
-        <h3>Nivel de amenaza de Slayer al máximo</h3>
-        <p>Echa mano de la tecnología más avanzada para aniquilar demonios con el traje de pretor avanzado del DOOM Slayer, que incluye un lanzallamas al hombro y una hoja ejecutora retráctil en la muñeca. Serás más rápido, fuerte y versátil que nunca gracias a armas y modificaciones mejoradas, como el gancho de carnicero de la súper escopeta para acortar las distancias, y habilidades como Carrera doble.</p>
     </section>
 
     <footer>

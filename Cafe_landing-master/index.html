@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav">
+      <h1 class="nav__logo">TORRES COFFEE</h1>
+      <nav class="nav__nav">
+        <ul class="nav__ul">
+          <li class="nav__li"><a href="#home">HOME</a></li>
+          <li class="nav__li"><a href="#story">HISTORIA</a></li>
+          <li class="nav__li"><a href="#blog">BLOG</a></li>
+          <li class="nav__li"><a href="#subscribe">SUBSCRIBE</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a name="home"></a>
+    <div class="header__content">
+      <div class="header__img">
+        <img src="./static/img/head.webp" alt="header img" />
+      </div>
+      <p class="header__text">Donde cada taza cuenta una historia</p>
+      <a name="story"></a>
+    </div>
+  </header>
+  <main>
+    <article class="story">
+      <h2 class="story__title">HISTORIA</h2>
+      <div class="story__block">
+        <div class="story__img">
+          <img src="./static/img/story_img.webp" alt="story img" />
+        </div>
+        <div class="story__content">
+          <p class="story__text">
+            Cuenta la leyenda que un pastor etíope llamado Kaldi descubrió el café cuando notó que sus cabras tenían más
+            energía tras comer unos frutos rojos. Al probarlos, sintió una vitalidad inigualable.
+
+            Siglos después, esa misma pasión por el café nos inspira en Torres Coffee, donde cada taza refleja la
+            tradición, el aroma y la energía de aquella primera gran historia.Descubre el sabor que despierta tus
+            sentidos.
+          </p>
+          <a name="blog"></a>
+        </div>
+      </div>
+    </article>
+    <section class="blog">
+      <h2 class="blog__title">BLOG</h2>
+      <div class="blog__content">
+        <article class="blog__card">
+          <h3 class="blog__label">Noticias Del Cafe De Hoy</h3>
+          <div class="blog__img">
+            <img src="./static/img/blog_img2.webp" alt="card img 1" />
+          </div>
+          <p class="blog__text">
+            En febrero, la producción de café en Colombia alcanzó 1,36 millones de sacos de 60 kilos, lo que representa
+            un incremento del 42% en comparación con el mismo mes del año anterior, favorecida por condiciones
+            climáticas óptimas.
+          </p>
+        </article>
+        <article class="blog__card">
+          <h3 class="blog__label">Prueba Nuevas Muestras</h3>
+          <div class="blog__img">
+            <img src="./static/img/blog_img1.webp" alt="card img 1" />
+          </div>
+          <p class="blog__text">
+            "¿Te atreves a probar algo nuevo?
+            Nuestras muestras de café son perfectas para los curiosos y los aventureros. Con cada variedad, te llevamos
+            a un viaje de sabores únicos y aromas inolvidables. ¡Encuentra tu favorito!"
+          </p>
+        </article>
+        <article class="blog__card">
+          <h3 class="blog__label">Desde Vigo</h3>
+          <div class="blog__img">
+            <img src="./static/img/blog_img3.webp" alt="card img 1" />
+          </div>
+          <p class="blog__text">
+            Bienvenidos a Café Vigués, tu rincón especial en el corazón de Vigo, Galicia. Aquí, entre las calles
+            empedradas y el aire salado de la ría, hemos creado un espacio donde el café es más que una bebida: es una
+            experiencia.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="feedback">
+      <a name="subscribe"></a>
+      <h2 class="feedback__title">SUBSCRIBE</h2>
+      <form action="#" class="feedback__form">
+        <div class="feedback__input">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="torrescoffeevigo@gmail.com">
+        </div>
+        <button class="feedback__submit" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__text">
+      © COPYRIGHT 2025
+    </div>
+  </footer>
+</body>
+
+</html>
